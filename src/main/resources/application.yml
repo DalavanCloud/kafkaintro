@@ -5,3 +5,7 @@ spring:
       bootstrap-servers: kafka:9092
     producer:
       bootstrap-servers: kafka:9092
+logging:
+  level:
+    org.springframework.kafka: DEBUG
+    org.apache.kafka: DEBUG
