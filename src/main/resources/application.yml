@@ -1,10 +1,13 @@
 spring:
   kafka:
+    bootstrap-servers: localhost:9092
     consumer:
       group-id: kafka-intro
-      bootstrap-servers: kafka:9092
-    producer:
-      bootstrap-servers: kafka:9092
+
+---
+spring:
+  profiles: debug
+
 logging:
   level:
     org.springframework.kafka: DEBUG
